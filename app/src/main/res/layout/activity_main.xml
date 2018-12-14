@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/activity_main_btnNetworkError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background_blue"
+        android:text="Network Error"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/activity_main_btnError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background_blue"
+        android:text="Normal Error"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/activity_main_btnEmptyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background_blue"
+        android:text="Empty List Error"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/activity_main_btnPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background_blue"
+        android:text="Allow Permission"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/activity_main_btnLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background_blue"
+        android:text="Loading"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

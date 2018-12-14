@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iamkurtgoz.progressview.ProgressView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progressLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/activity_error_editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Title"
+        android:text="@string/error_title"/>
+
+    <EditText
+        android:id="@+id/activity_error_editSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Subtitle"
+        android:text="@string/error_subtitle"/>
+
+    <EditText
+        android:id="@+id/activity_error_editButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Button Text"
+        android:text="@string/try_again"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity_error_btnStartLottie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button_background_blue"
+            android:text="Start Lottie"/>
+
+        <Button
+            android:id="@+id/activity_error_btnStartImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button_background_blue"
+            android:text="Start Image"/>
+    </LinearLayout>
+
+</com.iamkurtgoz.progressview.ProgressView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progress_network_layout_lottieView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/progress_network_layout_imgView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/progress_network_layout_textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/network_error_title"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/progress_network_layout_textSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="@string/network_error_subtitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="#37474F" />
+
+    <Button
+        android:id="@+id/progress_network_layout_btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_button_background_blue"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:text="@string/try_again"/>
+
+</LinearLayout>
