@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.iamkurtgoz.progressview.views.CustomView;
 import com.iamkurtgoz.progressview.views.EmptyListView;
 import com.iamkurtgoz.progressview.views.ErrorView;
 import com.iamkurtgoz.progressview.views.LoadingView;
@@ -13,7 +14,7 @@ import com.iamkurtgoz.progressview.views.PermissionView;
 public class ProgressView extends ViewUtils {
 
     private Context baseContext;
-    private View VIEW_LOADING, VIEW_ERROR, VIEW_NETWORK, VIEW_EMPTY_LIST, VIEW_PERMISSION;
+    private View VIEW_LOADING, VIEW_ERROR, VIEW_NETWORK, VIEW_EMPTY_LIST, VIEW_PERMISSION, VIEW_CUSTOM;
 
     public ProgressView(Context context) {
         super(context);
@@ -32,17 +33,19 @@ public class ProgressView extends ViewUtils {
         VIEW_NETWORK = getLayoutView(R.layout.progress_network_layout, VIEWS.NETWORK);
         VIEW_EMPTY_LIST = getLayoutView(R.layout.progress_empty_list_layout, VIEWS.EMPTY_LIST);
         VIEW_PERMISSION = getLayoutView(R.layout.progress_permission_layout, VIEWS.PERMISSION);
+        VIEW_CUSTOM = getLayoutView(R.layout.progress_custom_layout, VIEWS.CUSTOM);
 
         addView(VIEW_LOADING, 0);
         addView(VIEW_ERROR, 1);
         addView(VIEW_NETWORK, 2);
         addView(VIEW_EMPTY_LIST, 3);
         addView(VIEW_PERMISSION, 4);
+        addView(VIEW_CUSTOM, 5);
         pushContent();
     }
 
     private void hideViews(){
-        hideAllView(VIEW_LOADING, VIEW_ERROR, VIEW_NETWORK, VIEW_EMPTY_LIST, VIEW_PERMISSION);
+        hideAllView(VIEW_LOADING, VIEW_ERROR, VIEW_NETWORK, VIEW_EMPTY_LIST, VIEW_PERMISSION, VIEW_CUSTOM);
     }
 
     public void pushContent(){
@@ -72,5 +75,10 @@ public class ProgressView extends ViewUtils {
     public LoadingView pushLoading(){
         hideViews();
         return LoadingView.with(VIEW_LOADING);
+    }
+
+    public CustomView customView(boolean withLottie){
+        hideViews();
+        return CustomView.with(VIEW_CUSTOM, withLottie);
     }
 }

@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.iamkurtgoz.progressview.ProgressView;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button btnNetworkError, btnError, btnEmptyList, btnPermission, btnLoading;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setBtnEmptyListClick();
         setBtnPermissionClick();
         setBtnLoadingClick();
+
     }
 
     private void setBtnNetworkErrorClick(){
