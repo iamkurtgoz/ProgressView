@@ -6,7 +6,7 @@
 ##### Implementation of the fragment with the ability to display indeterminate progress indicator when you are waiting for the initial data.
 
 ##### Tutorial
-![Watch](ss/example.mov)
+#[Youtube](https://youtu.be/eJAhw76pThg "Youtube")
 
 ### How to Import
 ##### Step 1. Add the JitPack repository to your build file
@@ -21,7 +21,7 @@ allprojects {
 ##### Step 2. Add the dependency
 ```java
 dependencies {
-    implementation 'com.github.iamkurtgoz:ProgressView:$LAST_VERSION'
+    implementation 'com.github.iamkurtgoz:ProgressView:1.2'
 }
 ```
 [![](https://jitpack.io/v/iamkurtgoz/ProgressView.svg)](https://jitpack.io/#iamkurtgoz/ProgressView)
