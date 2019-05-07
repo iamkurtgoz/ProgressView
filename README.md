@@ -5,7 +5,7 @@
 
 ##### Implementation of the fragment with the ability to display indeterminate progress indicator when you are waiting for the initial data.
 
-##### Tutorial
+##### Example Video
 #[Youtube](https://youtu.be/eJAhw76pThg "Youtube")
 
 ### How to Import
