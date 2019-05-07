@@ -3,22 +3,10 @@
 
 ## What Works
 
-##### The layout makes it easy to control during the process..
+##### Implementation of the fragment with the ability to display indeterminate progress indicator when you are waiting for the initial data.
 
-##### Loading Example
-![Example1](ss/loading.gif)
-
-##### Network Example
-![Example2](ss/networkerror.gif)
-
-##### Error Example
-![Example3](ss/error.gif)
-
-##### Empty List Example
-![Example4](ss/emptylist.gif)
-
-##### Permission Example
-![Example5](ss/permission.gif)
+##### Tutorial
+![Watch](ss/example.mov)
 
 ### How to Import
 ##### Step 1. Add the JitPack repository to your build file
@@ -33,31 +21,25 @@ allprojects {
 ##### Step 2. Add the dependency
 ```java
 dependencies {
-    implementation 'com.github.iamkurtgoz:ProgressView:1.0.1'
+    implementation 'com.github.iamkurtgoz:ProgressView:$LAST_VERSION'
 }
 ```
 [![](https://jitpack.io/v/iamkurtgoz/ProgressView.svg)](https://jitpack.io/#iamkurtgoz/ProgressView)
 
 ## What Works
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<com.iamkurtgoz.progressview.ProgressView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/progressLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
-
-    -----
-
-</com.iamkurtgoz.progressview.ProgressView>
+```java
+public abstract class BaseFragment extends BaseProgressFragment {
 ```
+* Extend your fragment from the library *
+
+### After 
 
 ```java
-ProgressView progressView = (ProgressView) findViewById(R.id.progressLayout);
-progressView.pushLoading().pushEmptyListView("Loading. Please Wait!");
+setLoading(); //for loading
+setLoading("Loading.. Please Wait"); //for loading
+
+setTextMessage("Error connection. Please try again later."); //just text message
+
+setMessage(R.drawable.error_image,"Error Data","Please try again later."); //rich message
 ```
 # CONTACT : kurtgozmehmet159@gmail.com
