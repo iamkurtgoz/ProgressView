@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/progress_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/progressBar_textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:text="Message Title"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/progress_message_imgHeader"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:src="@drawable/error_image"/>
+
+        <TextView
+            android:id="@+id/progress_message_textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:text="Message Title"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/progress_message_textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Empty Title"
+            android:gravity="center"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/progress_message_btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button_background_red"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="İptal"/>
+
+            <Button
+                android:id="@+id/progress_message_btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button_background_blue"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="Devam Et"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:text="Message Title"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/fragment_example_btnLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading"/>
+
+    <Button
+        android:id="@+id/fragment_example_btnLoadingWithText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading with text"/>
+
+    <Button
+        android:id="@+id/fragment_example_btnEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Message"/>
+
+    <Button
+        android:id="@+id/fragment_example_btnMessage1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert 1"/>
+
+    <Button
+        android:id="@+id/fragment_example_btnMessage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert 2"/>
+
+    <Button
+        android:id="@+id/fragment_example_btnMessage3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert 3"/>
+</LinearLayout>

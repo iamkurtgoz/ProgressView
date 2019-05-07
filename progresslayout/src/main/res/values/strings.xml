@@ -1,19 +1,19 @@
 <resources>
     <string name="app_name">Progress View</string>
 
-    <string name="try_again">Try Again</string>
-    <string name="network_error_title">Ups! Network Connection Error!</string>
-    <string name="network_error_subtitle">Now we can\'t connect to the internet. Please try again later.</string>
+    <string name="try_again">Tekrar Dene</string>
+    <string name="network_error_title">İnternet Bağlantısı Yok!</string>
+    <string name="network_error_subtitle">İnternete bağlanamadık. Lütfen daha sonra tekrar deneyin.</string>
 
-    <string name="error_title">Ups! Error!</string>
-    <string name="error_subtitle">Please try again later.</string>
+    <string name="error_title">Hata!</string>
+    <string name="error_subtitle">Lütfen tekrar deneyin..</string>
 
-    <string name="empty_list_title">Ups! Empty!</string>
-    <string name="empty_list_subtitle">List empty. Please try again later.</string>
+    <string name="empty_list_title">Boş Veri!</string>
+    <string name="empty_list_subtitle">Liste boş. Listelenecek bir veri yok.</string>
 
-    <string name="allow_permission">Allow Permission</string>
-    <string name="permission_title">Ups! Permission Not Allow!</string>
-    <string name="permission_subtitle">Please try allow permission.</string>
+    <string name="allow_permission">İzin ver.</string>
+    <string name="permission_title">İzinler Alınamadı.</string>
+    <string name="permission_subtitle">Lütfen gerekli izinleri verin.</string>
 
-    <string name="loading">Loading..</string>
+    <string name="loading">Yükleniyor..</string>
 </resources>

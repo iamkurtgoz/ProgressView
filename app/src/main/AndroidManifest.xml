@@ -19,11 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NetworkErrorActivity" />
-        <activity android:name=".ErrorActivity" />
-        <activity android:name=".EmptyListActivity" />
-        <activity android:name=".PermissionActivity" />
-        <activity android:name=".LoadingActivity"></activity>
+        <activity android:name=".ActivityFragment"></activity>
     </application>
 
 </manifest>
