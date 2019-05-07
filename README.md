@@ -6,7 +6,7 @@
 ##### Implementation of the fragment with the ability to display indeterminate progress indicator when you are waiting for the initial data.
 
 ##### Example Video
-#[Youtube](https://youtu.be/eJAhw76pThg "Youtube")
+[Youtube](https://youtu.be/eJAhw76pThg "Youtube")
 
 ### How to Import
 ##### Step 1. Add the JitPack repository to your build file
