@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:airbnb="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,11 +13,12 @@
         android:visibility="gone"
         android:orientation="vertical">
 
-        <ProgressBar
-            style="?android:attr/progressBarStyleLarge"
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progressView"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            airbnb:lottie_rawRes="@raw/loading_lottie"
+            airbnb:lottie_loop="true"/>
 
         <TextView
             android:id="@+id/progressBar_textTitle"
@@ -45,6 +48,13 @@
             android:layout_width="144dp"
             android:layout_height="144dp"
             android:src="@drawable/error_image"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progress_message_animationView"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            airbnb:lottie_rawRes="@raw/loading_lottie"
+            airbnb:lottie_loop="true"/>
 
         <TextView
             android:id="@+id/progress_message_textTitle"

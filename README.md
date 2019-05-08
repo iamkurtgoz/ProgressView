@@ -21,7 +21,7 @@ allprojects {
 ##### Step 2. Add the dependency
 ```java
 dependencies {
-    implementation 'com.github.iamkurtgoz:ProgressView:1.2'
+    implementation 'com.github.iamkurtgoz:ProgressView:1.3'
 }
 ```
 [![](https://jitpack.io/v/iamkurtgoz/ProgressView.svg)](https://jitpack.io/#iamkurtgoz/ProgressView)

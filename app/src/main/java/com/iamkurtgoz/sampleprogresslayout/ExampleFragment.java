@@ -54,7 +54,7 @@ public class ExampleFragment extends BaseFragment {
                     public void run() {
                         setContent();
                     }
-                }, 2500);
+                }, 5000);
             }
         });
     }
@@ -69,7 +69,7 @@ public class ExampleFragment extends BaseFragment {
                     public void run() {
                         setContent();
                     }
-                }, 2500);
+                }, 5000);
             }
         });
     }
@@ -87,8 +87,8 @@ public class ExampleFragment extends BaseFragment {
         btnMessage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setMessage(
-                        R.drawable.error_image,
+                setMessageWithLottie(
+                        R.raw.error_lottie,
                         "Error Data",
                         "Please try again later."
                 );
@@ -100,8 +100,8 @@ public class ExampleFragment extends BaseFragment {
         btnMessage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setMessage(
-                        R.drawable.error_image,
+                setMessageWithLottie(
+                        R.raw.error_lottie,
                         "Error Data",
                         "Please try again later.",
                         "Try Again",
@@ -126,8 +126,8 @@ public class ExampleFragment extends BaseFragment {
         btnMessage3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setMessage(
-                        R.drawable.network_error_image,
+                setMessageWithLottie(
+                        R.raw.network_error_lottie,
                         "Error Connection",
                         "Connection error. Check your connection.",
                         "Try Again",
